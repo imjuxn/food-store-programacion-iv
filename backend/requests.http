@@ -1,0 +1,46 @@
+@base = http://localhost:8000/api/v1
+
+GET {{base}}/categorias
+
+###
+GET {{base}}/productos?skip=0&limit=8&search=pizza
+
+###
+POST {{base}}/auth/register
+Content-Type: application/json
+
+{
+  "username": "cliente_http",
+  "full_name": "Cliente HTTP",
+  "email": "cliente_http@example.com",
+  "password": "Clave1234!"
+}
+
+###
+POST {{base}}/auth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=cliente_http&password=Clave1234!
+
+###
+GET {{base}}/auth/me
+
+###
+POST {{base}}/pedidos
+Content-Type: application/json
+
+{
+  "items": [{"producto_id": 1, "cantidad": 1}],
+  "forma_pago": "EFECTIVO",
+  "direccion_entrega": "Calle Ejemplo 123"
+}
+
+###
+POST {{base}}/pedidos
+Content-Type: application/json
+
+{
+  "items": [],
+  "forma_pago": "EFECTIVO",
+  "direccion_entrega": "Calle Ejemplo 123"
+}

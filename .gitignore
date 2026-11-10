@@ -1,0 +1,14 @@
+backend/.venv/
+backend/.env
+backend/.tmp/
+backend/*.db
+backend/*.db-journal
+backend/*.sqlite*
+frontend/.env
+frontend/node_modules/
+frontend/dist/
+.npm-cache/
+.pnpm-store/
+**/__pycache__/
+**/*.pyc
+*.zip
