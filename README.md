@@ -100,9 +100,9 @@ Comprimir **esta carpeta raíz**, no la carpeta que la contiene. Excluir `.venv`
 
 Después de completar los enlaces de abajo, desde la carpeta raíz ejecutar `./pack.ps1` en PowerShell para regenerar el ZIP sin incluir secretos ni dependencias descargadas.
 
-La consigna también solicita un **repositorio público en GitHub** y un **video de 10–15 minutos**. Agregar aquí las dos URL reales antes de entregar:
+La consigna también solicita un **repositorio público en GitHub** y un **video de 10–15 minutos**. Enlaces de la entrega:
 
 - Repositorio público: https://github.com/imjuxn/food-store-programacion-iv
-- Video público: pendiente de agregar.
+- Video público: https://youtu.be/jcEjikQgkCQ
 
 Para el video: presentarse con la cámara encendida al inicio; mostrar la arquitectura y el seed; registrar un cliente, comprar y cancelar un pedido pendiente comprobando que se devuelve el stock; crear otro pedido y mostrar la gestión como admin. Cerrar con las pruebas y el build. Son dos pedidos distintos porque uno que ya está en preparación no puede ser cancelado por el cliente.
